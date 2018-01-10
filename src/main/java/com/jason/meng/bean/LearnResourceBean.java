@@ -7,30 +7,30 @@ package com.jason.meng.bean;
 
 public class LearnResourceBean {
 
-    private String name;
-    private String englishName;
+    private String author;
+    private String title;
     private String url;
 
-    public LearnResourceBean(String url, String name, String englishName) {
+    public LearnResourceBean(String author, String title, String url) {
+        this.author = author;
+        this.title = title;
         this.url = url;
-        this.name = name;
-        this.englishName = englishName;
     }
 
-    public String getName() {
-        return name;
+    public String getAuthor() {
+        return author;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setAuthor(String author) {
+        this.author = author;
     }
 
-    public String getEnglishName() {
-        return englishName;
+    public String getTitle() {
+        return title;
     }
 
-    public void setEnglishName(String englishName) {
-        this.englishName = englishName;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public String getUrl() {
@@ -44,8 +44,8 @@ public class LearnResourceBean {
     @Override
     public String toString() {
         return "LearnResourceBean{" +
-                "name='" + name + '\'' +
-                ", englishName='" + englishName + '\'' +
+                "author='" + author + '\'' +
+                ", title='" + title + '\'' +
                 ", url='" + url + '\'' +
                 '}';
     }
